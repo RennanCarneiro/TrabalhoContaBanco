@@ -65,12 +65,14 @@ public class TesteOperacoes {
     // Método para realizar operações entre contas
     public void realizarOperacoes() {
         // Solicita os números das contas envolvidas na operação
-        System.out.println("Informe o número da agência e conta do cliente que deseja enviar dinheiro: ");
+        System.out.println("Informe o número da agência do cliente que deseja enviar dinheiro: ");
         int agenciaEnvio = Integer.parseInt(sc.nextLine());
+        System.out.println("Informe o número da conta do cliente que deseja enviar dinheiro: ");
         int contaEnvio = Integer.parseInt(sc.nextLine());
 
-        System.out.println("Informe o número da agência e conta do cliente que receberá o dinheiro: ");
+        System.out.println("Informe o número da agência do cliente que receberá o dinheiro: ");
         int agenciaRecebimento = Integer.parseInt(sc.nextLine());
+        System.out.println("Informe o número da conta do cliente que receberá o dinheiro: ");
         int contaRecebimento = Integer.parseInt(sc.nextLine());
 
         Conta contaEnviar = null;
@@ -99,8 +101,9 @@ public class TesteOperacoes {
     // Método para exibir saldo
     public void exibirSaldo() {
         // Solicita os números da agência e conta para verificar o saldo
-        System.out.println("Informe o número da agência e conta para verificar o saldo: ");
+        System.out.println("Informe o número da agência ");
         int agencia = Integer.parseInt(sc.nextLine());
+        System.out.println("Informe o número da conta ");
         int conta = Integer.parseInt(sc.nextLine());
 
         // Procura pela conta na lista
